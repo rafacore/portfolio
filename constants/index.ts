@@ -252,7 +252,44 @@ export const Skill_data = [
     },
   ];
   
+  export const experiences = [
+    {
+      company: "I'AM Helium",
+      title: "Software Developer",
+      duration: '2021- current',
+      description: 'I build and deliver tailored user experiences across various industries. My expertise lies in developing and optimizing SPAs and micro front-ends, improving scalability, performance, and driving business results. By collaborating with cross-functional teams, I provide data-driven insights and marketing optimizations that enhance user engagement and conversions.',
+       stack: ['CRO', 'HTML & CSS', 'JS', 'React', 'TypeScript', 'AEM', 'Adobe Analytics', 'Adobe Target']   
+     },
+     {
+      company: "BarBooks",
+      title: "Software Engineer",
+      duration: 'FEBRUARY 2020 - AUGUST 2021',
+      description: 'I focused on building and optimising UI/UX components. I also contributed to design improvements on the websites, enhancing the user experience and site navigation.',
+       stack: ['React', 'HTML', 'CSS', 'TypeScript', 'NodeJS', 'Wordpress']   
+     },
+     {
+      company: "SpaceNow",
+      title: "Software Engineer",
+      duration: 'Feb 2019 - Sep 2019 ', 
+      description: 'Responsible for the implementation of design specifications, component creation and all site improvementsworking',
+      stack: ['HTML', 'CSS','StyledComponent', 'React', 'Redux']   
+     }
+  ];
   
-  
+  // export const experiences = [
+  //   {
+  //     company: 'Company A',
+  //     title: 'Front-End Developer',
+  //     duration: '2020 - 2022',
+  //     description: 'Worked on UI/UX improvements and A/B testing.',
+  //   },
+  //   {
+  //     company: 'Company B',
+  //     title: 'Full Stack Developer',
+  //     duration: '2018 - 2020',
+  //     description: 'Led backend development with Node.js and React.',
+  //   },
+  //   // Add more experiences
+  // ];
   
   
