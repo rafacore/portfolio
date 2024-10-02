@@ -1,27 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+.cursive {
+  font-family: "Cedarville Cursive", cursive;
+}
+.Welcome-text {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    linear-gradient(90.01deg, #e59cff 0.01%, #ba9cff 50.01%, #9cb2ff 100%);
+  background-blend-mode: normal, screen;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Welcome-box {
+  isolation: isolate;
+  overflow: hidden;
+  align-items: center;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-radius: 32px;
+  box-shadow: inset 0 -7px 11px #a48fff1f;
+  display: flex;
+
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  transition: 0.45s cubic-bezier(0.6, 0.6, 0, 1) box-shadow;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.button-primary {
+  background: linear-gradient(
+      180deg,
+      rgba(60, 8, 126, 0) 0%,
+      rgba(60, 8, 126, 0.32) 100%
+    ),
+    rgba(113, 47, 255, 0.12);
+  box-shadow: inset 0 0 12px #bf97ff3d;
+}
+.button-primary:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(60, 8, 126, 0) 0%,
+      rgba(60, 8, 126, 0.42) 100%
+    ),
+    rgba(113, 47, 255, 0.24);
+  box-shadow: inset 0 0 12px #bf97ff70;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* // ITME LINE COMPOPNENT */
+
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  width: 50%;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  width: 80%;
+  position: relative;
+  left: 20%;
+}
+
+.timeline-item .timeline-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.timeline-item .company {
+  width: 20%;
+  display: flex;
+    flex-flow: row-reverse;
+  text-align: right;
+  color: #fff;
+  position: relative;
+  align-self: center;
+  /* right: 15%;
+  top: 65px; */
+}
+
+.timeline-item .details {
+  width: 75%;
+  padding: 15px;
+  /* background-color:rgba(9, 0, 59, 0.5); */
+  /*  rgba(6, 0, 40, 0.5);  */
+  /* #0f0062; */
+  /* color: #fff; */
+  border-radius: 5px;
+  /* box-shadow: 0 4px 8px rgba(6, 0, 40, 0.1); */
+  left: 5%;
+
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 18px );
+  -webkit-backdrop-filter: blur( 18px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.timeline-item .timeline-point {
+  position: absolute;
+  left: 25%;
+  transform: translateX(-50%);
+  height: 35px;
+  width: 35px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 4px solid #030014;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #fff;
+  transform: translateX(-50%);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .timeline {
+
+    width: 100%;
+
   }
+  
+  .timeline-item {
+    width: 100%;
+    left: unset;
+    flex-direction: column;
+    align-items: flex-start;
+        /* border: 1px solid #fff; */
+      flex-direction: row;
+  }
+  .timeline-item .timeline-content {
+   
+    flex-direction: column;
+
+
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  .timeline-item .company {
+    width: 100%;
+    right: 1%;
+    top: 41px;
+    /* text-align: left;
+    margin-bottom: 10px; */
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .timeline-item .details {
+    width: 95%;
+    left: 9%;
+  }
+
+  .timeline::before {
+    left:8%;
+    /* right: 10%; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 2px;
+  }
+
+  .timeline-item .timeline-point {
+    right: 92%;
+        left: unset;
+    transform: translateX(0);
   }
 }
