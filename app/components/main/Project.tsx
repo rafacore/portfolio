@@ -1,34 +1,30 @@
-import React from 'react'
+import React from "react";
 import ProjectCard from "../sub/ProjectCard";
+import { PROJECTS } from "../../../constants/index";
 
 const Project = () => {
   return (
     <div
-    className="flex flex-col items-center justify-center py-20"
-    id="projects"
-  >
-    <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
-      My Projects
-    </h1>
-    <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-      <ProjectCard
-        src="/NextWebsite.png"
-        title="Modern Next.js Portfolio"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      />
-      <ProjectCard
-        src="/CardImage.png"
-        title="Interactive Website Cards"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      />
-      <ProjectCard
-        src="/SpaceWebsite.png"
-        title="Space Themed Website"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      />
+      className="flex flex-col items-center justify-center py-20"
+      id="projects"
+    >
+      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 pb-20">
+        My Projects
+      </h1>
+      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
+        {PROJECTS.map((project, index) => (
+          <ProjectCard
+            src={project.src}
+            title={project.title}
+            description={project.description}
+            git={project.git}
+            live={project.live}
+            tech={project.tech}
+          />
+        ))}
+      </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

@@ -1,3 +1,4 @@
+import { link } from "fs";
 
 export const Skill_data = [
     {
@@ -60,15 +61,21 @@ export const Skill_data = [
       width: 80,
       height: 80,
     },
+    // {
+    //   skill_name: "Stripe Payment",
+    //   Image: "/stripe.webp",
+    //   width: 80,
+    //   height: 80,
+    // },
     {
-      skill_name: "Stripe Payment",
-      Image: "/stripe.webp",
+      skill_name: "Node js",
+      Image: "/node-js.png",
       width: 80,
       height: 80,
     },
     {
-      skill_name: "Node js",
-      Image: "/node-js.png",
+      skill_name: "Express js",
+      Image: "/express.png",
       width: 80,
       height: 80,
     },
@@ -77,7 +84,19 @@ export const Skill_data = [
       Image: "/mongodb.png",
       width: 40,
       height: 40,
+    }, 
+    {
+      skill_name: "Graphql",
+      Image: "/graphql.png",
+      width: 80,
+      height: 80,
     },
+    // {
+    //   skill_name: "Figma",
+    //   Image: "/figma.png",
+    //   width: 50,
+    //   height: 50,
+    // },
   
   ];
   
@@ -275,6 +294,39 @@ export const Skill_data = [
       stack: ['HTML', 'CSS','StyledComponent', 'React', 'Redux']   
      }
   ];
+
+
+  export const PROJECTS = [
+    {
+      title: "Trip tips",
+      description: "description what I have learned",
+      src:"/NextWebsite.png",
+      git:"https://github.com/rafacore/trip-tips",
+      live:"https://github.com/rafacore/trip-tips",
+      tech: ['React', 'HTML', 'CSS', 'TypeScript', 'NodeJS']
+
+    },
+    {
+      title: "Search-engine",
+      description: "description what I have learned",
+      src:"/NextWebsite.png",
+      // links: ["visualizar links", "codigo links"],
+      git:"https://github.com/rafacore/search-engine",
+      live:"https://github.com/rafacore/trip-tips",
+      tech: ['React', 'HTML', 'CSS', 'TypeScript', 'NodeJS']
+
+    },
+    {
+      title: "Store-react-mfe",
+      description: "description what I have learned",
+      git:"https://github.com/rafacore/store-react-mfe",
+      live:"https://github.com/rafacore/store-react-mfe",
+      src:"/NextWebsite.png",
+      // links: ["visualizar links", "codigo links"],
+      tech: ['React', 'HTML', 'CSS', 'TypeScript', 'NodeJS']
+
+    },
+  ]
   
   // export const experiences = [
   //   {
