@@ -15,8 +15,8 @@ const Experience = () => {
       <TimeLine />
 
       <div className="flex w-full items-center justify-center gap-10 mt-20">
-        <Button label="Resume " />
-        <Button label="Contact Me" />
+        <Button label="Resume " href="#" />
+        <Button label="Contact Me" href="#"/>
       </div>
     </section>
   );
