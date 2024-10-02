@@ -9,6 +9,7 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import Button from "./common/Button";
 
 const HeroContent = () => {
   return (
@@ -47,12 +48,13 @@ const HeroContent = () => {
           Delivering high-performance web experiences that elevate design and
           optimize user interactions for the modern digital world.
         </motion.p>
-        <motion.a
+        {/* <motion.a
           variants={slideInFromLeft(1)}
           className="py-2 text-center text-white cursor-pointer rounded-lg max-w-[200px] bg-gradient-to-r from-purple-500 to-cyan-500"
         >
           Learn More !
-        </motion.a>
+        </motion.a> */}
+        <Button label="learn more" href="#"/>
       </div>
       {/* <motion.div
         variants={slideInFromRight(0.8)}
