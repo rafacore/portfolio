@@ -300,16 +300,16 @@ export const Skill_data = [
     {
       title: "Trip tips",
       description: "description what I have learned",
-      src:"/NextWebsite.png",
+      src:"/projects/trip-tips.png",
       git:"https://github.com/rafacore/trip-tips",
-      live:"https://github.com/rafacore/trip-tips",
+      live:"https://trip-tips-client.vercel.app/",
       tech: ['React', 'HTML', 'CSS', 'TypeScript', 'NodeJS']
 
     },
     {
       title: "Search-engine",
       description: "description what I have learned",
-      src:"/NextWebsite.png",
+      src:"/projects/trip-tips.png",
       // links: ["visualizar links", "codigo links"],
       git:"https://github.com/rafacore/search-engine",
       live:"https://github.com/rafacore/trip-tips",
@@ -321,7 +321,7 @@ export const Skill_data = [
       description: "description what I have learned",
       git:"https://github.com/rafacore/store-react-mfe",
       live:"https://github.com/rafacore/store-react-mfe",
-      src:"/NextWebsite.png",
+      src:"/projects/trip-tips.png",
       // links: ["visualizar links", "codigo links"],
       tech: ['React', 'HTML', 'CSS', 'TypeScript', 'NodeJS']
 

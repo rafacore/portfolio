@@ -20,18 +20,18 @@ const About = () => {
       </p>
 <div>
       <ul className='text-white mt-10 flex gap-5' >
-        <li> <a href=''> <RxGithubLogo size={30}/></a></li>
-        <li><a href=""><RxLinkedinLogo size={30}/></a></li>
+        <li> <a  target="_blank" href='https://github.com/rafacore'> <RxGithubLogo size={30}/></a></li>
+        <li><a  target="_blank"  href="https://www.linkedin.com/in/rafaelandradedonascimento/"><RxLinkedinLogo size={30}/></a></li>
       </ul>
 </div>
     </div>
-    <Image
+    {/* <Image
       src="/NextWebsite.png"
       alt="alt"
       width={300}
       height={300}
       className=" rounded-full object-contain"
-    />
+    /> */}
   </div>
   </div>
   )

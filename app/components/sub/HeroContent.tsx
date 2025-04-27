@@ -16,7 +16,7 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="items-center justify-center px-20 mt-40 w-full h-[720px] z-[20]"
+      className="items-center justify-center px-20 mt-20 w-full h-[720px] z-[20]"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
@@ -34,11 +34,11 @@ const HeroContent = () => {
          
           <span>
             Bringing Creative Front-End <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            <div className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mt-[15px]">
               {" "}
               Solutions to Life
-            </span>
-            <SparklesIcon className="text-[#ff] h-10 w-10 float" />
+            </div>
+            <SparklesIcon className="text-[#ff] h-10 w-10 float mt-[15px]" />
           </span>
         </motion.div>
         <motion.p

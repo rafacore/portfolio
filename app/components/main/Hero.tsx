@@ -1,6 +1,7 @@
 import React from "react";
 import HeroContent from "../sub/HeroContent";
 import StarCanvas from "./StarBackground";
+import CodeGalaxyBackground from "./CodeGalaxyBackground";
 // import BlackHole from '../../public/public_blackhole.webm';
 
 const Hero  = ( )=> {
@@ -16,7 +17,9 @@ const Hero  = ( )=> {
                 <source src="/blackhole.webm" type="video/webm" />
             </video> */}
             <div className="">
-            <StarCanvas />
+            {/* <StarCanvas /> */}
+            <CodeGalaxyBackground/>
+
             </div>
          
             <HeroContent/>
